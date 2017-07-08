@@ -1,0 +1,51 @@
+body{
+    background-color: dodgerblue
+}
+
+#header{
+    color:white;
+    position: absolute;
+    top:5%;
+    left:5%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerH{
+    display: flex;
+    align-items: center;
+}
+
+.options{
+    height: 60vh;
+    width: 60vh;
+    background: url(../img/circke.png) no-repeat  center ;
+    background-size: contain;
+    flex-direction: column;  
+}
+
+
+.btn{
+    line-height: 400%; /* <-- this is what you must define */
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 20%;
+    background-color: white;
+    width: 60%;
+    height:20%;
+    border-radius: 3px 120px;        
+}
+
+.btn2{
+    margin-top:10%;
+}
+
+.next{
+    width: 20%;
+    height: 20%;
+    margin-top: 25%;
+}
