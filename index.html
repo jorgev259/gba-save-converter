@@ -1,5 +1,6 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/filesaver.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="style/main.css">
 
@@ -12,8 +13,19 @@
         </div>
         
         <div id="p2" class="options centerH">
-            <div>You need your </div>
-            <img src="img/next.png" class="next"/>
-        </div>        
+            <div class="info">You need data_008_0000.bin and a save on .sav format, both from the same game. <br><a href="https://www.reddit.com/r/3dshacks/comments/602csj/tutorial_bring_your_wiiu_gba_saves_to_3ds_gba_vc/">Click here for info on how to dump them</a><br>Drop both files below to continue</div>
+            <div id="filesBox" class="center">
+                <div id="filemsg">Drop Files here</div><input type="file" multiple name="file" id="file" class="inputfile" />
+<label for="file" id="file2"> or Click Here</label><br>
+                <div id="bin">Missing data_008_0000.bin /</div>
+                <div id="sav"> Missing .sav save</div>
+            </div>
+            <img src="img/next.png" onclick="change('2','3')"id="next"/>
+        </div>
+
+        <div id="p3" class="options centerH">
+            <div class="btn" onclick="execute(2)">.sav to WiiU</div>
+            <div class="btn btn2" onclick="execute(1)">WiiU to .sav</div>
+        </div>
     </div>
 </body>

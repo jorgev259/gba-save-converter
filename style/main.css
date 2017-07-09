@@ -1,9 +1,9 @@
 body{
-    background-color: dodgerblue
+    background-color: dodgerblue;
+    color:white;
 }
 
 #header{
-    color:white;
     position: absolute;
     top:5%;
     left:5%;
@@ -20,6 +20,37 @@ body{
     align-items: center;
 }
 
+.info{
+    margin-top:20%;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    font-size:2.6vh;
+}
+
+#filesBox{
+    flex-wrap: wrap;
+    margin-top: 5%;
+    border:white 2px dashed;
+    width:80%;
+    height: 15%;
+    font-size:2.6vh;
+}
+
+#file{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#file + label {
+	cursor: pointer;
+    border: white 1px solid;
+}
+
 .options{
     height: 60vh;
     width: 60vh;
@@ -30,22 +61,25 @@ body{
 
 
 .btn{
-    line-height: 400%; /* <-- this is what you must define */
+    line-height: 400%;
     vertical-align: middle;
     text-align: center;
     margin-top: 20%;
     background-color: white;
     width: 60%;
     height:20%;
-    border-radius: 3px 120px;        
+    border-radius: 3px 120px;
+    color:Black;
+    font-size:3.1h;
+    cursor: pointer;
 }
 
 .btn2{
     margin-top:10%;
 }
 
-.next{
+#next{
+    margin-top: 5%;
     width: 20%;
     height: 20%;
-    margin-top: 25%;
 }
